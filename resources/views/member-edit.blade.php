@@ -38,7 +38,7 @@
 		      <select type="text" class="form-control" placeholder="Select Divition" name="divition_id" required="required">
 		      	<option>Divition</option>
 		      	@foreach($divition as $key => $value)
-		      	<option value="{{$key}}">{{$value}}</option>
+		      	<option value="{{$key}}" @if($member->divition_id === $key) selected='selected' @endif>{{$value}}</option>
 		      	@endforeach
 		      	</select>
 		    </div>
